@@ -1,7 +1,6 @@
 <?php
-/*MUHAMMAD ALFIANSYAH - 10650021*/
 for ($i=0;$i<10;$i++){/*random nilai individu*/
-  $cromosom[($i+1)] = round(mt_rand(0,15),2);
+	$cromosom[($i+1)] = round(mt_rand(0,15),2);
 }
 echo "<b>nilai populasi = ".implode(',',$cromosom)."</b><br>";/*menampilkan nilai individu*/
 echo "<br><b>POPULASI</b>";
@@ -36,11 +35,8 @@ foreach($newmember as $key=>$value){/*seleksi individu*/
 		if($temp < $values){
 			$temp = $values;
 			$x = $keys;
-		}else{
-			$final = $temp;
-			$index = $x;
 		}
 	}
 }
-echo "<br>individu terpilih = ".$final." pada index ke-".$index;/*menampilkan individu terpilih*/
+echo "<br>individu terpilih = ".$temp." pada index ke-".$x;/*menampilkan individu terpilih*/
 ?>
